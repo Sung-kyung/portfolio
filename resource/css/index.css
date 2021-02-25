@@ -6,12 +6,12 @@ html {
 
 @font-face {
     font-family: 'BebasNeue';
-    src: url('font/BebasNeue-Book.ttf') format('truetype');
+    src: url('resource/font/BebasNeue-Book.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Aurelie';
-    src: url('font/Aurelie_Smith_Script.otf') format('truetype');
+    src: url('resource/font/Aurelie_Smith_Script.otf') format('truetype');
 }
 
 @font-face {
@@ -22,7 +22,7 @@ html {
 }
 @font-face {
     font-family: 'Helvetica';
-    src: url('font/HelveticaExtendedBlack.ttf') format('truetype');
+    src: url('resource/font/HelveticaExtendedBlack.ttf') format('truetype');
 }
 /* 노말라이즈 */
 body,
