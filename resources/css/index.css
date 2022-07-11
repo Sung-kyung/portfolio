@@ -6,12 +6,12 @@ html {
 
 @font-face {
     font-family: 'BebasNeue';
-    src: url('font/BebasNeue-Book.ttf') format('truetype');
+    src: url('../font/BebasNeue-Book.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Aurelie';
-    src: url('font/Aurelie_Smith_Script.otf') format('truetype');
+    src: url('../font/Aurelie_Smith_Script.otf') format('truetype');
 }
 
 @font-face {
@@ -22,7 +22,7 @@ html {
 }
 @font-face {
     font-family: 'Helvetica';
-    src: url('font/HelveticaExtendedBlack.ttf') format('truetype');
+    src: url('../font/HelveticaExtendedBlack.ttf') format('truetype');
 }
 /* 노말라이즈 */
 body,
@@ -793,6 +793,7 @@ body {
     padding-top: 15%;
     width: 100%;
     position: relative;
+    margin-bottom:5%;
 }
 .introduce {
     font-family: 'Helvetica';
@@ -1035,15 +1036,16 @@ body {
     top: 45%;
 }
 
-.page-4 .receipt-box>.profile-txt-box>.edu {
+.page-4 .receipt-box>.profile-txt-box>.edu , .page-4 .receipt-box>.profile-txt-box>.ex {
     border-bottom: 3px dashed #b3b3b3;
     position: relative;
-    padding-bottom: 22px;
+    /* padding-bottom: 22px; */
+    padding-bottom:42px;
     padding-top: 22px;
 }
 
 .page-4 .receipt-box>.profile-txt-box>.edu .education,
-.page-4 .receipt-box>.profile-txt-box>.edu>.certificate {
+.page-4 .receipt-box>.profile-txt-box>.edu>.certificate,.page-4 .receipt-box>.profile-txt-box>.ex .experience {
     font-size: 28px;
     font-weight: bold;
     padding-top: 8px;
@@ -1100,6 +1102,10 @@ body {
 .page-4 .receipt-box>.profile-txt-box>.skill .skill-cont {
     padding: 12px 0;
     font-size: 20px;
+}
+.page-4 .receipt-box>.profile-txt-box>.skill .skill-cont img {
+    width: 70px;
+    padding: 20px;
 }
 
 .page-4 .receipt-box>.profile-txt-box>.skill .skill-cont>.sk {
@@ -1219,6 +1225,20 @@ body {
 
 /* 4페이지 끝 */
 
+/* page5 시작*/ 
+.page-5 {
+    /* background-image: url("/resources/image/pf_designPage.jpg");
+    background-size: contain; */
+    width:100%;
+    height:100%;    
+}
+.page-5 > img {
+    width:100%;
+}
+
+/* page5 끝*/ 
+
+
 /* contact 페이지 시작 */
 .page-contact {
     width: 100%;
@@ -1255,44 +1275,6 @@ body {
     text-align: center;
 }
 
-.form-box>form>#name>input,
-.form-box>form>#email>input {
-    width: 919px;
-    height: 52px;
-}
-
-input {
-    margin: 15px 0;
-}
-
-.form-box>form>#content>textarea {
-    width: 919px;
-    height: 149px;
-    margin: 15px 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-}
-
-.form-box>form>#submit>input {
-    background-color: #B97A63;
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    border: 1px solid #B97A63;
-    border-radius: 15px;
-    box-shadow: 0 2px 2px rgba(255, 255, 255, .5);
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 0.08em;
-    font-family: 'Noto Sans KR', sans-serif;
-    cursor: pointer;
-}
-
-.form-box>form>#submit>input:hover {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #333;
-}
 
 .notice {
     text-align: center;
@@ -1304,14 +1286,17 @@ input {
 
 .contact-bottom>div {
     color: #555555;
+    padding-top:50px;
+    font-weight: bold;
 }
 
 .contact-bottom>div>span {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size:30px;
 }
 
 .contact-bottom>div>i {
-    font-size: 20px;
+    font-size: 40px;
     padding: 0 20px;
     color: #555555;
 }
