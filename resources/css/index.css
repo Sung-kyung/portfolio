@@ -1278,19 +1278,29 @@ body {
     text-align: center;
     color: #afafaf;
     padding-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 60px;
     font-size: 13px;
 }
 
-.contact-bottom>div {
+.contact-bottom> .gmail {
     color: #555555;
-    padding-top:50px;
+    padding-top:80px;
     font-weight: bold;
+    margin:0 auto; 
+    text-align: center;
+    height:94px;
+}
+.contact-bottom> .gmail:hover {
+    color:#CEA461;
+    cursor: pointer;
 }
 
 .contact-bottom>div>span {
-    /* font-size: 14px; */
     font-size:30px;
+}
+.contact-bottom> .gmail:hover > span {
+    font-size:25px;
+    transition: all ease .3s;
 }
 
 .contact-bottom>div>i {
